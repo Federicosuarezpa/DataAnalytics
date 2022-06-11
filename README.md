@@ -111,7 +111,7 @@ In the model shown previously, 6 different topics have been identified, each of 
 For example if we choose topic 4, the terms that appear most frequently are "taste great", "taste coconut", "extra virgin" terms related to the product in question.
 
 <p align="center">
-<img src="images/html.png" width="550" height="350" />
+<img src="images/html.png" width="100%" height="350" />
 </p>
 
 #### Sentiment of each topic
@@ -126,6 +126,7 @@ The following graph shows that there isn't a correlation between score and polar
 </p>
 
 However, by observing the following scatterplot representing the correlation, it is possible to notice a slight increase in polarity in the reviews with 2, 3 and 4 stars, with a reversal of trend with regard to 5-star reviews.
+We can assume that the reversal of the polarity trend in 5-star reviews is because a greater presence of "strong" words within the reviews with more extreme votes; this in some cases can lead to incorrect evaluation of the polarity.
 
 ## Review Classification
 
