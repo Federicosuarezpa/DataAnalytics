@@ -49,7 +49,7 @@ A good way to distinguis negative and positive reviews is the frequency of the w
 
 
 <p align="center">
-<img src="images/wordcloudPositive.png" width="100%" height="300" />
+<img src="images/wordcloudPositive.png" width="500" height="300" />
 </p>
 
 In the wordcloud above, some words that we can see are like "Delicious", "Love", "Best", "Tasty" and another that probably are from some product like "Coffee".
@@ -96,7 +96,7 @@ In natural language processing, the latent Dirichlet allocation (LDA) is a gener
 To calculate the optimal number of topics, 10 different models are generated, each with the number of topics to be identified ranging from 1 to 10. For each model generated the topic coherence is calculated and the one with the highest topic coherence value is chosen.
 
 <p align="center">
-<img src="Images/Images/optimal_number_topic.png" width="400" height="250" />
+<img src="images/optimal_number_topic.png" width="400" height="250" />
 </p>
 
 In this case, the ideal topic number for this product is 6. The LDA model is then created by setting to 6 the parameter relative to the number of topics to search for in the text.
@@ -111,5 +111,6 @@ In this case, the ideal topic number for this product is 6. The LDA model is the
 
 
 ## Review Classification
+
 
 
