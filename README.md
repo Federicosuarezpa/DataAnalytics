@@ -27,8 +27,16 @@ In our case we made an analysis over the time, observing how the number of revie
 <img src="images/graphic_over_time.png" width="100%" height="250" />
 </p>
 
+In this case we can see how at the start (around 2000-2001) there wasn't almost reviews, but with the past of the time every year we have more and more reviews, and always the one with most numbers are the reviews of 5 stars, we can see that the products are really good or we could also think that there are some sellers who try to fake their reviews to get better reviewss.
 
 ### Opinion Score
+
+The opinion score graph:
+
+<p align="center">
+<img src="images/graphic_reviews.png" width="100%" height="250" />
+</p>
+
 
 
 
