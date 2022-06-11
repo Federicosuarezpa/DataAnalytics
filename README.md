@@ -23,7 +23,9 @@ For this project we've taken a dataset from internet about food reviews, in this
 
 In our case we made an analysis over the time, observing how the number of reviews increses with the time.
 
-
+<p align="center">
+<img src="images/graphic_over_time.png" width="400" height="250" />
+</p>
 
 
 ### Opinion Score
