@@ -5,6 +5,8 @@
 * **Classification** of positive and negative reviews based on the text of the review.
 * **Aspect Based Sentiment Analysis** on product reviews to detect sentiments on different product's characteristics.
 
+### Opinion Score over the time
+
 ### Opinion Score
 
 
