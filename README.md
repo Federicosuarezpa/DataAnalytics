@@ -76,7 +76,7 @@ In order to train the model, it is necessary to transform the reviews into the r
 In this section we study the Aspect Based Sentiment Analysis, in this case there's an analysis of the 10 products with more reviews in the dataset to perform the analysis.
 
 <p align="center">
-<img src="images/graphic_most_reviewed.png" width="500" height="300" />
+<img src="images/graphic_most_reviewed.png" width="100%" height="300" />
 </p>
 
 This study particularly take into consideration the product with *productId* B003B3OOPA is one of the products with more reviews, the thirds to be exact.
@@ -88,7 +88,6 @@ The product in question is:
 
 As we can see this product still today has a lot of reviews and a good average score. That's a good indicator that the reviews are valid.
 
-------------------------
 ### LDA model
 In natural language processing, the latent Dirichlet allocation (LDA) is a generative statistical model that allows sets of observations to be explained by unobserved groups that explain why some parts of the data are similar. For example, if observations are words collected into documents, it posits that each document is a mixture of a small number of topics and that each word's presence is attributable to one of the document's topics. LDA is an example of a topic model.
 
@@ -103,14 +102,52 @@ In this case, the ideal topic number for this product is 6. The LDA model is the
 
 #### Topic Visualization
 
+In the model shown previously, 6 different topics have been identified, each of which consists of a combination of keywords to which it is assigned a weight that indicates how much that term represents the topic to which it belongs. The **pyLDAvis** package allows you to view an interactive graph that clearly shows the subdivision of the topics.
+
+<p align="center">
+<img src="images/pyldavis.png" width="100%" height="350" />
+</p>
+
+For example if we choose topic 4, the terms that appear most frequently are "taste great", "taste coconut", "extra virgin" terms related to the product in question.
+
+<p align="center">
+<img src="images/html.png" width="550" height="350" />
+</p>
 
 #### Sentiment of each topic
-
+For every topic is then calculated the polarity. Polarity is expressed with a value from -1 to 1, where a polarity >0 is positive and negative if the value is <0
 
 ## Sentiment Analysis
+The goal of this analysis is to identify correlations between text polarity and review's score.
+The following graph shows that there isn't a correlation between score and polarity:
 
+<p align="center">
+<img src="images/polarity_graph.png" width="500" height="600" />
+</p>
+
+However, by observing the following scatterplot representing the correlation, it is possible to notice a slight increase in polarity in the reviews with 2, 3 and 4 stars, with a reversal of trend with regard to 5-star reviews.
 
 ## Review Classification
 
+The goal of this analysis is to identify of positive and negative reviews based on the text of the review using a Logistic Regression model.
+The dataset has been split into train set (75%) and test set(25%)
 
+The following graph can help us to take the optimal alpha to make the confusion matrix.
 
+<p align="center">
+<img src="images/optimal_alpha.png" width="450" height="300" />
+</p>
+
+In our case the optimal number is 16.
+
+After a dataset random undersampling the amount of positive and negative reviews has been balanced, improving the classification results:
+
+<p align="center">
+<img src="images/Matrix_predict.png" width="450" height="350" />
+</p>
+
+Finally we can see another matrix of how helpful the users found the reviews.
+
+<p align="center">
+<img src="images/matrix_reviews_helpful.png " width="450" height="350" />
+</p>
